@@ -36,6 +36,9 @@ const clearOtherCat = () => {
 }
 
 const remix = async () => {
+    if (!props.myCat || !props.otherCat) {
+        return
+    }
     pending.value = true;
     const keplrClient = await getKeplr();
     await remixRequest(keplrClient, props.myCat.id, props.otherCat.id)
