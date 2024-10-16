@@ -27,7 +27,7 @@ Run the following commands:
 ```
 git clone https://github.com/victoriahendersonn/KittyMix.git
 cd KittyMix/backend/pulsar-scripts
-npm run install
+npm install
 npm run build
 cd ..
 make compile-optimized-reproducible
