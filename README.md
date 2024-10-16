@@ -53,6 +53,7 @@ Please keep track of your CODE_ID, CODE_HASH, and CONTRACT_ADDRESS.
 Run the following commands:
 ```
 cd KittyMix/frontend
+npm install
 npm run build
 npm run dev
 ```
