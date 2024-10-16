@@ -76,3 +76,26 @@ cd KittyMix/frontend
 npm run build
 npm run dev
 ```
+
+# User Summary
+When users join the application, they gain a randomly generated pixel-art cat. This is their first digital pet. The shape of the face, body, tail, and ears are all randomised as are the colour and the texture of the cat’s coat. Different shapes, colours, and textures have different rarities, so you may be lucky when you first join the game, or you may not. 
+
+To gain more cats, you have to offer to breed your cat with other cats. Without revealing too much about how the new cats are generated, the traits of the cat you choose to breed your cat with play into the shapes, colours, and textures of the new cat. To increase the genetic diversity of the cats in the game available to breed with, more people need to join. By increasing the genetic diversity, you can end up with rarer and rarer cats in your collection.
+
+# Investor Pitch
+Digital collectibles often lose engagement over time because they lack community-driven interaction and true uniqueness. Users crave rare, valuable items but struggle to find meaningful ways to grow or enhance their collection.
+
+KittyMix combines the thrill of randomness, scarcity, and community-driven gameplay. Each new user receives a randomly generated, one-of-a-kind pixel-art cat with varying shapes, colours, and textures. The rarity of these traits creates immediate value. Users can then breed their cat with others, leading to the discovery of even rarer traits and increasing the value of their collection.
+
+We're tapping into the booming digital collectible and NFT markets, where rarity and community are key. By incentivizing users to invite more players (increasing genetic diversity and trait combinations), we create viral growth. The built-in breeding mechanics offer long-term engagement, while the potential for tokenizing cats as NFTs opens up new revenue streams.
+
+In short, we solve the problem of stale, static collectibles by creating a living, evolving, and engaging digital ecosystem that encourages both community participation and value growth.
+
+# Development Deep-dive
+Each cat is a non-fungible token that uses the SNIP-721 reference architecture for the contract. Each token has the attributes ears, tail, body, face, colour, and coat texture. The body parts are stored as numbers which match with numbers in the images of those parts in the front end. The colour and texture are stored as strings which relate to the colours stored in the vue app.
+
+When the app is opened, it attempts to load your cats from your wallet into the scene on the web frontend. If there are no tokens in the wallet then a mint query is sent to the contract to mint your first token, which will then appear in the scene.
+
+By opening the hamburger menu at the top, you will be shown a list of your tokens and a list of all tokens owned by all others on the network. To breed a cat, you can select one of your own cats and someone else’s cat. To breed the cats, a query is first sent to the contract to offer breeding to the owner of the other cat. The owner of that cat will be shown a notification panel so they can accept the request. When they accept the request, the web frontend will send another query to the contract to accept the request. They will then gain a cat.
+
+
