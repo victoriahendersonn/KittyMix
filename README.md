@@ -1,4 +1,4 @@
-# KittyMix
+# KittyMix ㅤ/ᐠ - ˕ -マ
 
 Hello! Welcome to KittyMix, a 2D cat collecting game where you have to remix your cat with other players to unlock more kitties!
 ```
