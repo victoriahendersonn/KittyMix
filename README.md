@@ -57,7 +57,7 @@ npm run build
 npm run dev
 ```
 
-# How to play with your friends
+# How to collect kitties with your friends!
 To play with your friends, get them to follow the following steps:
 - [ ] Create a `.env` file inside `KittyMix/frontend`
 - [ ] Add these to the `.env` files:
