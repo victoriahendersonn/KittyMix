@@ -74,6 +74,7 @@ VITE_CODE_HASH="YOUR_CODE_HASH"
 ```
 git clone https://github.com/victoriahendersonn/KittyMix.git
 cd KittyMix/frontend
+npm run install
 npm run build
 npm run dev
 ```
