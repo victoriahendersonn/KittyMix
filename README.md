@@ -11,7 +11,7 @@ Hello! Welcome to KittyMix, a 2D cat collecting game where you have to remix you
 
 # Getting started
 
-To make it easy for you, we've compiled a list of steps for you to follow to start the application.
+To make it easy for you, we've compiled a list of steps for you to follow to start KittyMix!
 
 - [ ] Follow this guide to set up your Secret Network - [Setting Up Your Environment](https://docs.scrt.network/secret-network-documentation/development/readme-1/setting-up-your-environment)
 - [ ] Follow this guide to setup Keplr with the Secret Testnet - [Using the Testnet](https://docs.scrt.network/secret-network-documentation/overview-ecosystem-and-technology/secret-network-overview/testnet)
