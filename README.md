@@ -58,18 +58,17 @@ npm run dev
 ```
 
 # How to play with your friends
-To play with your friends get them to follow these steps:
-
+To play with your friends, get them to follow the following steps:
 - [ ] Create a `.env` file inside `KittyMix/frontend`
 - [ ] Add these to the `.env` files:
-      ```
-      VITE_MNEMONIC="THEIR_MNEMONIC"
-      VITE_CHAIN_ID="pulsar-3"
-      VITE_SECRET_URL="https://api.pulsar3.scrttestnet.com"
-      VITE_DENOM="uscrt"
-      VITE_CONTRACT_ADDRESS="YOUR_CONTRACT_ADDRESS"
-      VITE_CODE_HASH="YOUR_CODE_HASH"
-      ```
+```
+VITE_MNEMONIC="THEIR_MNEMONIC"
+VITE_CHAIN_ID="pulsar-3"
+VITE_SECRET_URL="https://api.pulsar3.scrttestnet.com"
+VITE_DENOM="uscrt"
+VITE_CONTRACT_ADDRESS="YOUR_CONTRACT_ADDRESS"
+VITE_CODE_HASH="YOUR_CODE_HASH"
+```
 
 ```
 git clone https://github.com/victoriahendersonn/KittyMix.git
